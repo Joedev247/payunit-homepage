@@ -11,12 +11,7 @@ export default function Footer() {
               Ready to integrate Payunit?
             </div>
             <div className="flex flex-col sm:flex-row gap-3 mb-3">
-              <a
-                href="#"
-                className="inline-block px-4 py-2 bg-[#2563eb] text-white -[6px] text-sm font-semibold hover:bg-[#174ea6] transition"
-              >
-                Get Started
-              </a>
+             
               <a
                 href="#"
                 className="inline-block px-4 py-2 bg-white text-[#2563eb] border border-[#2563eb] -[6px] text-sm font-semibold hover:bg-gray-100 transition"

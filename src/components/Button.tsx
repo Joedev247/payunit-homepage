@@ -14,7 +14,7 @@ export default function Button({
   const base =
     "px-6 py-3  font-semibold transition-all duration-150 focus:outline-none";
   const variants = {
-    primary: "bg-primary text-white hover:bg-blue-700",
+    primary: "bg-primary text-white",
     secondary: "border border-primary text-primary hover:bg-blue-50",
     accent: "bg-accent text-white hover:bg-orange-500",
   };

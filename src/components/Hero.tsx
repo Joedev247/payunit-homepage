@@ -4,7 +4,7 @@ import Section from "../components/Section";
 
 export default function Hero() {
   return (
-    <Section bg="bg-[#f8fafc] border-b">
+    <Section bg="bg-[#f8fafc]">
       <div className="flex flex-col md:flex-row items-center gap-10 pt-8 pb-12">
         <div className="flex-1 text-center md:text-left flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">

@@ -13,9 +13,9 @@ export default function NewsletterForm() {
             required
             className="bg-white border border-[#E5E7EB] h-[46px] w-full md:w-[260px] -[8px] px-4 text-base placeholder-[#9CA3AF] focus:ring-2 focus:ring-[#FFB800] transition md:mr-3"
           />
-          <br /><Button
+          <Button
             type="submit"
-            className="h-[46px]  -[8px] px-6 text-base bg-[#222F3E] font-semibold shadow-none md:w-auto w-full"
+            className="h-[46px] -[8px] bg-[#222F3E] px-6 text-base font-semibold shadow-none md:w-auto w-full"
           >
             Subscribe to our newsletter
           </Button>
