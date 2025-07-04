@@ -11,12 +11,12 @@ export default function NewsletterForm() {
             type="email"
             placeholder="Enter your email"
             required
-            className="bg-white border border-[#E5E7EB] h-[46px] w-full md:w-[260px] rounded-[8px] px-4 text-base placeholder-[#9CA3AF] focus:ring-2 focus:ring-[#FFB800] transition md:mr-3"
+            className="bg-white border border-[#E5E7EB] h-[46px] w-full md:w-[260px] -[8px] px-4 text-base placeholder-[#9CA3AF] focus:ring-2 focus:ring-[#FFB800] transition md:mr-3"
           />
           <Button
             type="submit"
             variant="accent"
-            className="h-[46px] rounded-[8px] px-6 text-base font-semibold shadow-none md:w-auto w-full"
+            className="h-[46px] -[8px] px-6 text-base font-semibold shadow-none md:w-auto w-full"
           >
             Subscribe to our newsletter
           </Button>

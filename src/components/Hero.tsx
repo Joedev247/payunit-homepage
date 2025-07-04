@@ -17,7 +17,7 @@ export default function Hero() {
             customers.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <Button variant="primary" className="px-8 py-3 text-lg">
+            <Button className="px-8 bg-[#222F3E] py-3 text-lg">
               Get started
             </Button>
             <Button variant="secondary" className="px-8 py-3 text-lg">
@@ -29,13 +29,13 @@ export default function Hero() {
           <img
             src="/Group 104.png"
             alt="Hero"
-            className="w-[340px] h-[260px] rounded-lg object-cover bg-gray-100"
+            className="w-[340px] h-[260px]  object-cover bg-gray-100"
           />
-          <div className="absolute -top-10 right-8 w-20 h-20 rounded-full border-4 border-primary overflow-hidden bg-white flex items-center justify-center shadow-lg">
+          <div className="absolute -top-10 right-8 w-20 h-20 -full border-4 border-primary overflow-hidden bg-white flex items-center justify-center shadow-lg">
             <img
               src="/file.svg"
               alt="Avatar"
-              className="w-16 h-16 rounded-full object-cover"
+              className="w-16 h-16 -full object-cover"
             />
           </div>
         </div>

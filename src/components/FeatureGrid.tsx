@@ -30,7 +30,7 @@ export default function FeaturesGrid() {
               "API integrations",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center">
-                <span className="w-3 h-3 rounded-full bg-[#FFB800] block mr-2"></span>
+                <span className="w-3 h-3 -full bg-[#FFB800] block mr-2"></span>
                 {item}
               </li>
             ))}
@@ -53,11 +53,11 @@ export default function FeaturesGrid() {
         >
           <ul className="grid gap-2 text-[#3C4257] text-base md:text-[16px] mb-2">
             <li className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-[#FFB800] block mr-2"></span>
+              <span className="w-3 h-3 -full bg-[#FFB800] block mr-2"></span>
               Payments, refunds, subscriptions
             </li>
             <li className="flex items-center">
-              <span className="w-3 h-3 rounded-full bg-[#FFB800] block mr-2"></span>
+              <span className="w-3 h-3 -full bg-[#FFB800] block mr-2"></span>
               Webhooks, SDKs, and docs
             </li>
           </ul>

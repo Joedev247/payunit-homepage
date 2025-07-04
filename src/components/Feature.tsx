@@ -32,7 +32,7 @@ export default function Feature({
           <img
             src={imgSrc}
             alt={imgAlt}
-            className="w-[160px] h-[160px] md:w-[180px] md:h-[180px] object-contain rounded-[14px] shadow-[0_4px_16px_rgba(0,0,0,0.04)]"
+            className="w-[160px] h-[160px] md:w-[180px] md:h-[180px] object-contain -[14px] shadow-[0_4px_16px_rgba(0,0,0,0.04)]"
           />
         </div>
       )}
@@ -40,7 +40,9 @@ export default function Feature({
         <h3 className="font-semibold text-xl md:text-[22px] leading-tight mb-2 text-[#222F3E]">
           {title}
         </h3>
-        <p className="text-base md:text-[16px] text-[#3C4257] mb-4">{description}</p>
+        <p className="text-base md:text-[16px] text-[#3C4257] mb-4">
+          {description}
+        </p>
         {children}
       </div>
     </div>
