@@ -25,7 +25,7 @@ export default function FeatureGrid() {
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-2">User Experience</h2>
               <p className="text-gray-600 mb-6 max-w-md">
-                Offers to your customers an amazing customer experience: it's fast, easy, totally secure and above all with competitive transaction fees.
+                Offers to your customers an amazing customer experience: it&apos;s fast, easy, totally secure and above all with competitive transaction fees.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full mt-4">
@@ -43,7 +43,7 @@ export default function FeatureGrid() {
           <div className="flex flex-col animate-fade-in-right lg:mt-24 xl:mt-28">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Infinite possibilities</h2>
             <p className="text-gray-600 mb-6 max-w-xl">
-              Whether you're a business or an individual, you'll find the solution that's right for you among the wide range of services offered by PayUnit.
+              Whether you&apos;re a business or an individual, you&apos;ll find the solution that&apos;s right for you among the wide range of services offered by PayUnit.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 w-full">
               {possibilities.map((item) => (

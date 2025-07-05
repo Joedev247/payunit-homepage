@@ -6,7 +6,7 @@ export default function Testimonial() {
     <section className="w-full bg-[#E8F5F4] py-12 md:py-14">
       <div className="max-w-[960px] mx-auto px-4 flex flex-col items-center">
         <blockquote className="text-center font-medium text-lg md:text-[22px] leading-snug text-[#222F3E] mb-8 max-w-3xl">
-          "Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim."
+          &quot;Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim.&quot;
         </blockquote>
         <div className="flex items-center gap-3">
           <Image
