@@ -4,6 +4,8 @@ import FeaturesGrid from "@/components/FeatureGrid";
 import Partners from "@/components/Partner";
 import Testimonial from "@/components/Testimonial";
 import NewsletterForm from "@/components/NewletterForm";
+import Integrate from "@/components/Integrate";
+
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +17,7 @@ export default function Home() {
       <Partners />
       <Testimonial />
       <NewsletterForm />
+      <Integrate />
       <Footer />
     </main>
   );

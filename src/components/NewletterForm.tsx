@@ -4,25 +4,34 @@ import Input from "./Input";
 
 export default function NewsletterForm() {
   return (
-    <section className="w-full bg-[#FDEACC] py-8">
-      <div className="max-w-[1060px] mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-        <form className="flex flex-col md:flex-row md:items-center w-full md:w-auto gap-3 md:gap-0">
-          <Input
-            type="email"
-            placeholder="Enter your email"
-            required
-            className="bg-white border border-[#E5E7EB] h-[46px] w-full md:w-[260px] -[8px] px-4 text-base placeholder-[#9CA3AF] focus:ring-2 focus:ring-[#FFB800] transition md:mr-3"
-          />
-          <br /><Button
-            type="submit"
-            className="h-[46px]  -[8px] px-6 text-base bg-[#222F3E] font-semibold shadow-none md:w-auto w-full"
-          >
+    <section className="w-full bg-[#F494054D] py-12 md:py-16">
+      <div className="max-w-[1060px] mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-16">
+        {/* Form Section */}
+        <div className="md:w-1/2">
+          <div className="flex flex-col gap-3">
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              required
+              className="bg-white border border-[#F494054D] h-[46px] w-full px-4 text-base placeholder-[#9CA3AF] focus:ring-2 focus:ring-[#FFB800] transition"
+            />
+            <Button
+              type="submit"
+              className="h-[46px] px-6 text-base bg-[#222F3E] font-semibold shadow-none w-full"
+            >
+              Subscribe
+            </Button>
+          </div>
+        </div>
+
+        {/* Content Section */}
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-[#222F3E] text-3xl md:text-3xl font-bold mb-3">
             Subscribe to our newsletter
-          </Button>
-        </form>
-        <div className="hidden md:block w-px h-12 bg-[#E5E7EB] mx-6"></div>
-        <div className="md:w-[280px] text-[#3C4257] text-base font-medium text-center md:text-left">
-          Stay updated! No spam. Only the latest news &amp; offers.
+          </h2>
+          <p className="text-[#6B7280] text-base">
+            Subscribe for exciting news about PayUnit
+          </p>
         </div>
       </div>
     </section>
