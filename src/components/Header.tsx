@@ -2,50 +2,61 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
 import Image from "next/image";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="w-full bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-2 md:px-6">
-        <div className="flex items-center gap-2">
+    <header className="w-full bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+        {/* Logo */}
+        <div className="flex items-center">
           <Image
-            src="/file.svg"
+            src="/images/Frame.png" 
             alt="Payunit Logo"
-            width={32}
-            height={32}
-            className="w-8 h-8"
+            width={75} 
+            height={32} 
+            className="h-8"
           />
-          <span
-            className="font-extrabold text-lg tracking-tight text-primary"
-            style={{ letterSpacing: "-0.03em" }}
-          >
-            Payunit
-          </span>
         </div>
+        
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 items-center font-medium text-gray-700 text-sm">
-          <a className="hover:text-primary transition" href="#">
-            Products
-          </a>
-          <a className="hover:text-primary transition" href="#">
+        <nav className="hidden md:flex gap-8 items-center font-medium text-gray-800 text-sm">
+          <div className="flex items-center gap-1">
+            <a className="hover:text-teal-600 transition" href="#">
+              Product
+            </a>
+            <ChevronDown className="w-4 h-4 text-gray-500" />
+          </div>
+          <div className="flex items-center gap-1">
+            <a className="hover:text-teal-600 transition" href="#">
+              Use Case
+            </a>
+            <ChevronDown className="w-4 h-4 text-gray-500" />
+          </div>
+          <div className="flex items-center gap-1">
+            <a className="hover:text-teal-600 transition" href="#">
+              Learn
+            </a>
+            <ChevronDown className="w-4 h-4 text-gray-500" />
+          </div>
+          <div className="flex items-center gap-1">
+            <a className="hover:text-teal-600 transition" href="#">
+              Developer
+            </a>
+            <ChevronDown className="w-4 h-4 text-gray-500" />
+          </div>
+          <a className="hover:text-teal-600 transition" href="#">
             Pricing
           </a>
-          <a className="hover:text-primary transition" href="#">
-            Company
-          </a>
-          <a className="hover:text-primary transition" href="#">
-            Developers
-          </a>
-          <a className="hover:text-primary transition" href="#">
-            Help
-          </a>
         </nav>
+        
         <div className="hidden md:block">
-          <Button className="px-4 bg-[#222F3E] py-1.5 text-xs shadow font-semibold">
-            Sign in
+          <Button className="px-6 bg-slate-700 hover:bg-slate-800 py-2 text-sm text-white font-medium transition-colors">
+            Sign In
           </Button>
         </div>
+        
         {/* Hamburger Icon for Mobile */}
         <button
           className="md:hidden flex items-center justify-center p-2 ml-2 focus:outline-none"
@@ -53,82 +64,57 @@ export default function Header() {
           onClick={() => setMenuOpen((open) => !open)}
         >
           {menuOpen ? (
-            // Cancel (X) icon
-            <svg
-              className="w-6 h-6 text-gray-700"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <X className="w-6 h-6 text-gray-700" />
           ) : (
-            // Hamburger icon
-            <svg
-              className="w-6 h-6 text-gray-700"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <Menu className="w-6 h-6 text-gray-700" />
           )}
         </button>
       </div>
+      
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg animate-fade-in-down">
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg animate-fade-in-down">
           <nav className="flex flex-col gap-4 px-6 py-4 font-medium text-gray-700 text-base">
             <a
-              className="hover:text-primary transition"
+              className="hover:text-teal-600 transition"
               href="#"
               onClick={() => setMenuOpen(false)}
             >
-              Products
+              Product
             </a>
             <a
-              className="hover:text-primary transition"
+              className="hover:text-teal-600 transition"
+              href="#"
+              onClick={() => setMenuOpen(false)}
+            >
+              Use Case
+            </a>
+            <a
+              className="hover:text-teal-600 transition"
+              href="#"
+              onClick={() => setMenuOpen(false)}
+            >
+              Learn
+            </a>
+            <a
+              className="hover:text-teal-600 transition"
+              href="#"
+              onClick={() => setMenuOpen(false)}
+            >
+              Developer
+            </a>
+            <a
+              className="hover:text-teal-600 transition"
               href="#"
               onClick={() => setMenuOpen(false)}
             >
               Pricing
             </a>
-            <a
-              className="hover:text-primary transition"
-              href="#"
-              onClick={() => setMenuOpen(false)}
-            >
-              Company
-            </a>
-            <a
-              className="hover:text-primary transition"
-              href="#"
-              onClick={() => setMenuOpen(false)}
-            >
-              Developers
-            </a>
-            <a
-              className="hover:text-primary transition"
-              href="#"
-              onClick={() => setMenuOpen(false)}
-            >
-              Help
-            </a>
             <Button
-              className="w-full mt-2 bg-[#222F3E] text-white py-2 text-sm font-semibold"
+              className="w-full mt-2 bg-slate-700 hover:bg-slate-800 text-white py-2 text-sm font-medium transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              Sign in
+              Sign In
             </Button>
           </nav>
         </div>
